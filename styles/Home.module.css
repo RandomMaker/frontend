@@ -1,8 +1,18 @@
 .container {
-    min-height: 100vh;
-    padding: 0 0.5rem;
+    width: max-content;
+    margin: auto;
+    padding-top: 8vh;
+}
+
+.present {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+.showcomponents {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    width: max-content;
+    margin: auto;
 }
