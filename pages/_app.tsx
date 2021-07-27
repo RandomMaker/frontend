@@ -12,7 +12,7 @@ const themes = {
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeSwitcherProvider themeMap={themes} defaultTheme="dark">
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </ThemeSwitcherProvider>
     );
 }

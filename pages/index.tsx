@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Button, DatePicker, Tooltip } from "antd";
+import ThemeSwitcher from "../components/antd/ThemeSwitcher";
 
 export default function Home() {
     return (
@@ -13,10 +14,12 @@ export default function Home() {
                 <h1>Nexand - Nextjs + AntDesign</h1>
                 <h4>Everything you ever imagined</h4>
             </div>
-            <div className={styles.showcomponents}>
+
+            {/* <div className={styles.showcomponents}>
                 <DatePicker />
                 <Button type="primary">Click me</Button>
-            </div>
+            </div> */}
+            <ThemeSwitcher />
         </div>
     );
 }
