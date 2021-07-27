@@ -1,11 +1,12 @@
 const withLess = require("next-with-less");
+const path = require("path");
+const pathToLessFileVariables = path.resolve("./styles/theme.less");
 
 module.exports = withLess({
     lessLoaderOptions: {
-        lessOptions: {
-            modifyVars: {
-                "primary-color": "#000",
-            },
-        },
+        // it's possible to use additionalData or modifyVars for antd theming
+        // read more @ https://ant.design/docs/react/customize-theme
+        additionalData: (content) =>
+            `${content}\n\n@import '${pathToLessFileVariables}';`,
     },
 });
