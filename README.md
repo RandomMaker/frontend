@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a plug and chug project with nextjs and AntDesign.<br><br>
+Theme is fully customizable and it support both light and dark color modes.<br>
+Both color modes can be dynamically changed without restarting the developement server.<br>
 
-## Getting Started
+## Dependencies
+next-with-less (optional)
+react-css-theme-switcher (required)
 
-First, run the development server:
-
+## Setting up the project
+Just clone the repo and run 
 ```bash
-npm run dev
-# or
+yarn install
+```
+to install all dependencies for the project.
+
+Run the development server with
+```bash
 yarn dev
 ```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Customizing the theme
+There are two ways of customizing the theme
+1) DURING DEVELOPMENT
+    To see changes without restarting the server open `styles/themes/dark-theme.less` and make your changes for the dark mode.
+    You should see your changes live.
+    Same goes for `light-theme.less` but just before doing it, stop the development server. Go to `next.config.js` and at line 3 change 
+    ```
+    const pathToLessFileVariables = path.resolve("./styles/themes/dark-theme.less");
+    ```
+    to
+    ```
+    const pathToLessFileVariables = path.resolve("./styles/themes/light-theme.less");
+    ```
+    and then make changes to your `light-theme.less` file.
