@@ -1,10 +1,13 @@
-This is a plug and chug project with nextjs and AntDesign.<br><br>
-Theme is fully customizable and it support both light and dark color modes.<br>
-Both color modes can be dynamically changed without restarting the developement server.<br>
+<h1>Nexand</h1>
+A plug and chug project built with nextjs and AntDesign.<br><br>
+
+## Features
+* Theme is fully customizable and it support both light and dark color modes.<br>
+* Both color modes can be dynamically changed without restarting the developement server.<br>
 
 ## Dependencies
-next-with-less (optional)
-react-css-theme-switcher (required)
+* next-with-less (optional)
+* react-css-theme-switcher (required)
 
 ## Setting up the project
 Just clone the repo and run 
@@ -22,9 +25,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Customizing the theme
 There are two ways of customizing the theme
 1) DURING DEVELOPMENT
-    To see changes without restarting the server open `styles/themes/dark-theme.less` and make your changes for the dark mode.
+    To see changes without restarting the server open `styles/themes/dark-theme.less` and customize it according to your needs.
     You should see your changes live.
-    Same goes for `light-theme.less` but just before doing it, stop the development server. Go to `next.config.js` and at line 3 change 
+    Same goes for `light-theme.less` but just before doing it, stop the development server. Go to `next.config.js` and at line 3, change 
     ```
     const pathToLessFileVariables = path.resolve("./styles/themes/dark-theme.less");
     ```
@@ -32,4 +35,4 @@ There are two ways of customizing the theme
     ```
     const pathToLessFileVariables = path.resolve("./styles/themes/light-theme.less");
     ```
-    and then make changes to your `light-theme.less` file.
+    and then make changes to your `light-theme.less`.
