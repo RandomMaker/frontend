@@ -5,6 +5,9 @@ This project is made to reduce the pain when adding AntdDesign to NextJs project
 You can just clone the project and boom you get the basic barebones for setting up 
 Antd with NextJs.
 
+## Inspiration
+* https://dev.to/joserfelix/dynamic-theme-switching-in-ant-design-how-to-change-between-light-and-dark-themes-5b8p
+
 ## Features
 * Theme is fully customizable and it support both light and dark color modes.<br>
 * Both color modes can be dynamically changed without restarting the developement server.<br>
