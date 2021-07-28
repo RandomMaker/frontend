@@ -1,6 +1,10 @@
 <h1>Nexand</h1>
 A plug and chug project built with nextjs and AntDesign.<br><br>
 
+This project is made to reduce the pain when adding AntdDesign to NextJs projects.
+You can just clone the project and boom you get the basic barebones for setting up 
+Antd with NextJs.
+
 ## Features
 * Theme is fully customizable and it support both light and dark color modes.<br>
 * Both color modes can be dynamically changed without restarting the developement server.<br>
