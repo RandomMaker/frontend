@@ -27,12 +27,24 @@ There are two ways of customizing the theme
 1) DURING DEVELOPMENT
     To see changes without restarting the server open `styles/themes/dark-theme.less` and customize it according to your needs.
     You should see your changes live.
-    Same goes for `light-theme.less` but just before doing it, stop the development server. Go to `next.config.js` and at line 3, change 
+    Same goes for `light-theme.less` but just before doing it, stop the development server. Go to `next.config.js` and at line 3, change
+    
     ```
     const pathToLessFileVariables = path.resolve("./styles/themes/dark-theme.less");
     ```
+    
     to
+    
     ```
     const pathToLessFileVariables = path.resolve("./styles/themes/light-theme.less");
     ```
     and then make changes to your `light-theme.less`.
+    
+ 2) After making all of your changes run
+
+    ```bash
+    npx gulp less
+    ```
+    This will create css for both of your themes.
+    
+ ### And thats it, you should now have an up and running NextJs project with two color themes and Antd React setup.
