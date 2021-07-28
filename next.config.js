@@ -1,6 +1,6 @@
 const withLess = require("next-with-less");
 const path = require("path");
-const pathToLessFileVariables = path.resolve("./styles/theme.less");
+const pathToLessFileVariables = path.resolve("./styles/themes/dark-theme.less");
 
 module.exports = withLess({
     lessLoaderOptions: {
